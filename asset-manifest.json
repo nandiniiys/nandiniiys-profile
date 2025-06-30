@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nandiniiys-profile/static/css/main.3d05edf8.css",
+    "main.js": "/nandiniiys-profile/static/js/main.852191df.js",
+    "index.html": "/nandiniiys-profile/index.html",
+    "main.3d05edf8.css.map": "/nandiniiys-profile/static/css/main.3d05edf8.css.map",
+    "main.852191df.js.map": "/nandiniiys-profile/static/js/main.852191df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d05edf8.css",
+    "static/js/main.852191df.js"
+  ]
+}
