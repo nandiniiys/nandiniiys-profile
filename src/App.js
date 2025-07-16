@@ -1,12 +1,34 @@
-
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
+import Home from './pages/Home';
+import About from './pages/About';
+import Experience from './pages/Experience';
+import Projects from './pages/Projects';
+import Research from './pages/Research';
+import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div style={{ textAlign: 'center', marginTop: '5rem' }}>
-      <h1>Hi, I'm Nandinii</h1>
-      <p>Welcome to my personal website built with React!</p>
-    </div>
+    <Router basename="/nandiniiys-profile">
+      <div className="App">
+        <Navbar />
+        <main style={{ padding: '2rem' }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/research" element={<Research />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
