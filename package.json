@@ -1,8 +1,9 @@
 {
-  "name": "personal-website-react",
+  "name": "Nandinii.Y.S Profile",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.1"
@@ -15,5 +16,17 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://yourusername.github.io/your-repo-name"
+  "homepage": "https://nandiniiys.github.io/nandiniiys-profile",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
