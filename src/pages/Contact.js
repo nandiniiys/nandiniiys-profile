@@ -1,15 +1,60 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 export default function Contact() {
   return (
-    <div style={{ maxWidth: '600px', margin: 'auto' }}>
-      <h2>Contact Me</h2>
-      <p>If you're interested in collaborating or just want to say hello, feel free to reach out:</p>
-      <ul>
-        <li>Email: <a href="mailto:nandinii.y.s@gmail.com">nandinii.y.s@gmail.com</a></li>
-        <li>GitHub: <a href="https://github.com/nandiniiys" target="_blank" rel="noopener noreferrer">github.com/nandiniiys</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/nandiniiys" target="_blank" rel="noopener noreferrer">linkedin.com/in/nandiniiys</a></li>
-      </ul>
-    </div>
+    <motion.div
+      style={styles.container}
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
+      <h2 style={styles.heading}>Let's Connect</h2>
+      <p style={styles.blurb}>
+        Whether you're reaching out for collaboration, hiring, or just want to chat tech —
+        I'm always open to meaningful conversations.
+      </p>
+
+      <div style={styles.links}>
+        <a href="mailto:nandinii.y.s@gmail.com" style={styles.link}>Email</a>
+        <a href="https://github.com/nandiniiys" target="_blank" rel="noopener noreferrer" style={styles.link}>GitHub</a>
+        <a href="https://linkedin.com/in/nandiniiys" target="_blank" rel="noopener noreferrer" style={styles.link}>LinkedIn</a>
+      </div>
+    </motion.div>
   );
 }
+
+const styles = {
+  container: {
+    maxWidth: '800px',
+    margin: 'auto',
+    padding: '3rem 1rem',
+    textAlign: 'center',
+  },
+  heading: {
+    fontSize: '2rem',
+    marginBottom: '1rem',
+  },
+  blurb: {
+    fontSize: '1.1rem',
+    color: '#333',
+    marginBottom: '2rem',
+    lineHeight: 1.6,
+  },
+  links: {
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '2rem',
+    flexWrap: 'wrap',
+  },
+  link: {
+    fontSize: '1rem',
+    fontWeight: 'bold',
+    textDecoration: 'none',
+    color: '#111',
+    backgroundColor: 'rgba(158, 158, 237, 0.2)',
+    padding: '0.75rem 1.5rem',
+    borderRadius: '8px',
+    transition: 'background-color 0.2s ease',
+  },
+};
