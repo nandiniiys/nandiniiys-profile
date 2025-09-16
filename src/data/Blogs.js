@@ -19,9 +19,15 @@ const blogs = [
   },
   {
     title: "To Quebec City",
-    description: "A short poem",
-    tags: ["Travel Journals"],
+    description: "A postcard poem from the city that made a home in my heart.",
+    tags: ["Miscellenious"],
     pdf: "/blogs/Quebec_City.pdf"
+  },
+  {
+    title: "Honoring The Gods Within Me",
+    description: "An intimate invocation of the forgotten gods I’ve carried all along",
+    tags: ["Miscellenious"],
+    pdf: "/blogs/Honoring_the_gods_within_me.pdf"
   }
 ];
 
