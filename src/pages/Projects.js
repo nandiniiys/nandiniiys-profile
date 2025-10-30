@@ -4,7 +4,17 @@ import { motion } from 'framer-motion';
 import ProjectCard from '../components/ProjectCard';
 import allProjects from '../data/Projects.js';
 
-const tags = ['All', 'Frontend', 'Backend', 'Data Analytics', 'AI/ML', 'Networking & Security'];
+const tags = [
+  'All',
+  'Frontend',
+  'Backend',
+  'Cloud / Infra',
+  'Data Analytics',
+  'AI & Automation',
+  'Networking',
+  'Security',
+  'Systems'
+];
 
 export default function Projects() {
   const [selectedTag, setSelectedTag] = useState('All');

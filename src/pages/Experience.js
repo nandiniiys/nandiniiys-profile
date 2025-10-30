@@ -3,46 +3,46 @@ import ExperienceItem from '../components/ExperienceItem';
 
 export default function Experience() {
   const experiences = [
-    { 
-      company: 'Paytronix Systems, Inc.', 
-      title: 'Software Engineer Intern', 
-      date: 'May 2025-Present', 
+  { 
+    company: "Paytronix Systems, Inc.",
+    title: "Software Engineering Intern",
+    date: "May–Dec 2025",
+    bullets: [
+      "Built a self-service SMS configuration backend (Scala + REST) that reduced repeat support tickets by about 7% and gave internal teams more autonomy.",
+      "Designed scoped transaction APIs so front-end teams could move faster without backend blockers.",
+      "Collaborated with product and support teams to set clear guardrails and documentation: fewer surprises in production, smoother launches."
+    ]
+    },
+    {
+      company: "Paytronix Systems, Inc.",
+      title: "Software Engineer",
+      date: "Jul 2021–Jul 2024",
       bullets: [
-        'Did something cool', 
-        'More cool stuff', 
-        'Final achievement'
+        "Helped keep a multi-tenant SaaS platform serving 1,800+ clients steady at ~99% uptime as a primary on-call engineer.",
+        "Developed a Scala backend for an AI assistant that handled common client requests and eased support load by about 20%.",
+        "Automated KPI dashboards with Python, Snowflake, and Looker to enable automated reporting with real-time insights.",
+        "Implemented proactive threat mitigation and DDoS/bot filtering to keep client apps secure and stable."
       ]
     },
     {
-      company: 'Paytronix Systems, Inc.',
-      title: 'Backend Software Developer',
-      date: '2021–2024',
+      company: "HourWork",
+      title: "Research Assistant",
+      date: "Sep 2020–Dec 2020",
       bullets: [
-        'Built RESTful APIs in Java/Scala with Docker, Maven, Jenkins',
-        'Served as primary on-call engineer, triaged incidents, and contributed to maintaining system uptime.', 
-        'Integrated Apple Pay, implemented threat detection and mitigation and, implemented KPI dashboards.'
+        "Prototyped an NLP chatbot (Rasa + Dialogflow) to streamline client communication and route common requests automatically."
       ]
     },
     {
-      company: 'HourWork',
-      title: 'Research Assistant',
-      date: 'Sep 2020 – Dec 2020',
+      company: "UMass Boston",
+      title: "Undergraduate SI Leader — Data Structures & Algorithms",
+      date: "Sep 2019–Dec 2019",
       bullets: [
-        'Built an NLP-based chatbot pipeline using RASA and Google Dialogflow for company–client communications.',
-        'Streamlined automation of common support tasks, improving response efficiency and reducing manual workload.'
-      ]
-    },
-    {
-      company: 'UMass Boston',
-      title: 'Undergraduate SI Leader – Data Structures & Algorithms',
-      date: 'Sep 2019 – Dec 2019',
-      bullets: [
-        'Facilitated weekly peer-led instruction sessions for 5+ students to reinforce core data structure and algorithm concepts.',
-        'Provided debugging support and problem-solving guidance, resulting in 100% participation retention.',
-        'Helped improve student performance by at least one letter grade on average.'
+        "Led weekly peer-learning sessions that made algorithmic thinking and pointer logic a little less scary.",
+        "Provided one-on-one debugging and study support maintaining 100% participation retention and noticeable grade improvement across sessions."
       ]
     }
   ];
+
 
   return (
     <div style={styles.container}>
