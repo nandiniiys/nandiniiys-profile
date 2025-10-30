@@ -11,17 +11,18 @@ export default function Home() {
       <div style={styles.bio}>
         <h1 style={styles.heading}>Hi, I'm Nandinii Yeleswarapu</h1>
         <p style={styles.paragraph}>
-          I'm a software developer with a passion for building scalable backend systems, working with AI-driven platforms,
-          and architecting reliable APIs. Currently pursuing my Master’s in Computer Science at Texas A&M University,
-          I’ve contributed to enterprise SaaS products, academic research in machine learning, software verification, and 3D visualization tools.
+          I’m a software developer who enjoys building systems that are reliable, efficient, and a little smarter each time I revisit them.
         </p>
         <p style={styles.paragraph}>
-          My toolbelt includes Java, Scala, React, Docker, and cloud platforms like Azure. I care about clean code,
-          functional design, and impactful engineering.
+          Before grad school, I worked in industry building scalable SaaS backends and cloud-native APIs. Now I’m pursuing my Master’s in Computer Science at Texas A&M University, where my research focuses on reinforcement learning and meta-learning for adaptive wireless networks.  
+        </p>
+
+        <p style={styles.paragraph}>
+          My current toolkit spans Java, Scala, Python, and React, along with Docker, Git, and cloud platforms like Azure. I’m comfortable with these tools, but I’m always looking to learn something new and pick up better ways of building things. More than the stack itself, I care about writing code that’s easy to reason about and systems that can handle real-world stress without falling apart.
         </p>
         <p style={styles.paragraph}>
-          Outside of tech, you’ll usually find me traveling, getting lost in a good book, experimenting with DIY projects, or practicing my (still beginner!) ukulele skills.
-      </p>
+          When I’m not deep in code or research, I’m usually exploring new places, reading (currently in my pshycological thriller era), or working on small DIY projects like turning old packaging into lightweight shelves or holiday decor. Lately, I’ve been picking up the ukulele, and I’m finally starting to sound like I know a few songs!
+        </p>
       </div>
     </div>
   );

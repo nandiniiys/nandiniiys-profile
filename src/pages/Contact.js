@@ -11,10 +11,8 @@ export default function Contact() {
     >
       <h2 style={styles.heading}>Let's Connect</h2>
       <p style={styles.blurb}>
-        Whether you're reaching out for collaboration, hiring, or just want to chat tech —
-        I'm always open to meaningful conversations.
+        Whether you’re looking to collaborate, have a role that aligns with my work, or just want to talk tech, I’d love to connect.
       </p>
-
       <div style={styles.links}>
         <a href="https://github.com/nandiniiys" target="_blank" rel="noopener noreferrer" style={styles.link}>GitHub</a>
         <a href="https://linkedin.com/in/nandiniiys" target="_blank" rel="noopener noreferrer" style={styles.link}>LinkedIn</a>

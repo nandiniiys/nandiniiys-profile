@@ -4,28 +4,32 @@ import { motion } from 'framer-motion';
 export default function Research() {
   const researchItems = [
     {
-      title: 'Resource Allocation in Wireless Networks',
-      association: 'Texas A&M University',
-      advisor: 'Dr. I-Hong Hou (2025-present)',
-      description: 'Extended an existing deep reinforcement learning framework for optimizing information freshness in wireless networks modeled as Restless Multi-Armed Bandit (RMAB) problems. Integrated Weights & Biases for experiment tracking, Draccus for configuration management, and model checkpointing to enable robust, reproducible training. Currently enhancing the DeepTOP policy to improve learning efficiency in dynamic environments with Age of Information (AoI) constraints.',
-      projectLink: 'https://github.com/nandiniiys/DeepTOP4Wireless'
+      title: "Resource Allocation in Wireless Networks",
+      association: "Texas A&M University",
+      advisor: "Dr. I-Hong Hou (2025–present)",
+      description:
+        "Extending a deep reinforcement learning framework for optimizing information freshness in wireless networks modeled as Restless Multi-Armed Bandit (RMAB) problems.",
+      projectLink: "https://github.com/nandiniiys/DeepTOP4Wireless",
     },
     {
-      title: 'Machine Psychology Lab – Interactive 3D Visualization',
-      labLink: 'https://mpsych.org',
-      association: 'University of Massachusetts Boston',
-      advisor: 'Dr. Daniel Haehn  (2019-2021)',
-      description: 'Evaluated deep learning models for 3D visualization, converting 2D blueprints to 3D models, and developed a web-based interactive 3D model of a UMass Boston campus building using Autodesk Revit and JavaScript Xeokit SDK to automate rendering and enhance user engagement.',
-      projectLink: 'https://nandiniiys.github.io/LiteMckViewable/index.html',
+      title: "Machine Psychology Lab — Interactive 3D Visualization",
+      labLink: "https://mpsych.org",
+      association: "University of Massachusetts Boston",
+      advisor: "Dr. Daniel Haehn (2019–2021)",
+      description:
+        "Explored deep learning methods for 3D visualization and developed a browser-based model of a UMass Boston campus building using Autodesk Revit and the Xeokit JavaScript SDK. The project automated rendering pipelines and created an interactive, web-friendly experience for architectural exploration.",
+      projectLink: "https://nandiniiys.github.io/LiteMckViewable/index.html",
     },
     {
-      title: 'Software Verification Lab',
-      labLink: 'https://cogumbreiro.github.io',
-      association: 'University of Massachusetts Boston',
-      advisor: 'Dr. Tiago Cogumbreiro (2020)',
-      description: 'Contributed to Faial, a novel tool for localizing bugs in kernels caused by race conditions and over-synchronization, and designed C programs to generate CUDA kernels for benchmarking performance against related tools.',
+      title: "Software Verification Lab",
+      labLink: "https://cogumbreiro.github.io",
+      association: "University of Massachusetts Boston",
+      advisor: "Dr. Tiago Cogumbreiro (2020)",
+      description:
+        "Contributed to Faial, a tool for identifying concurrency issues such as race conditions and over-synchronization in kernels. Designed C programs to generate CUDA kernels for benchmarking and comparative performance testing.",
     },
   ];
+
 
   return (
     <div style={styles.container}>
@@ -48,7 +52,7 @@ export default function Research() {
           ) : (
             <h3 style={styles.title}>{item.title}</h3>
           )}
-          <h3 style={styles.desc}>{item.association} under {item.advisor}</h3>
+          <h3 style={styles.desc}>{item.association} Advised by {item.advisor}</h3>
           <p style={styles.desc}>{item.description}</p>
           {item.projectLink && (
             <a
