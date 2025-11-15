@@ -1,4 +1,4 @@
-# Personal Website (React)
+# Nandinii Yeleswarapu
 
 This repository contains the source code for my personal portfolio website, built with **React** and deployed via **GitHub Pages**.  
 🔗 **Live site:** [https://nandiniiys.github.io/nandiniiys-profile](https://nandiniiys.github.io/nandiniiys-profile)
