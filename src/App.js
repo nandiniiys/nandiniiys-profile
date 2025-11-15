@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Blogs from './pages/Blogs';
+import BlogPost from "./components/BlogPost";
 import Research from './pages/Research';
 import Contact from './pages/Contact';
 
@@ -24,6 +25,7 @@ function App() {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/research" element={<Research />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/blogs/:blogId" element={<BlogPost />} />
           </Routes>
         </main>
         <Footer />

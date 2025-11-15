@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import blogs from "../data/Blogs.js";
 
 function uniqTags(items) {
@@ -11,16 +12,15 @@ function uniqTags(items) {
 export default function Blogs() {
   const [selected, setSelected] = useState(null); // single-select
 
+  const navigate = useNavigate();
   const allTags = useMemo(() => uniqTags(blogs), []);
   const filtered = useMemo(() => {
     return blogs
-      .filter((b) => !selected || b.tags.includes(selected))
-      .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+      .filter((b) => !selected || b.tags.includes(selected));
   }, [selected]);
 
-  const openPdf = (blog) => {
-    const url = `${process.env.PUBLIC_URL}${blog.pdf}`;
-    window.open(url, "_blank", "noopener,noreferrer");
+  const openBlogPost = (blog) => {
+    navigate(`/blogs/${blog.id}`);
   };
 
   return (
@@ -63,10 +63,10 @@ export default function Blogs() {
               whileTap={{ scale: 0.97 }}
               transition={{ type: "spring", stiffness: 200 }}
               style={styles.card}
-              onClick={() => openPdf(b)}
+              onClick={() => openBlogPost(b)}
               role="button"
               tabIndex={0}
-              onKeyDown={(e) => (e.key === "Enter" ? openPdf(b) : null)}
+              onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && openBlogPost(b)}
             >
               <h3 style={styles.title}>{b.title}</h3>
               <p style={styles.desc}>{b.description}</p>
